@@ -98,7 +98,7 @@ class CheckableLabelButton(LabelButton):
         super().__init__(label, color, "medium", parent)
 
         self.focused = False
-        self.focused_color = "blue"
+        self.focused_color = "green"
         self.active = active
         self.active_label = active_label
         self.inactive_label = inactive_label
@@ -156,10 +156,21 @@ class CheckableLabelButton(LabelButton):
 
     def focusedStyle(self):
         self.setProperty("color", self.focused_color)
+        if self.active:
+            self.indicator.setProperty("color", self.focused_color)
         self.refreshStyle()
 
     def unfocusedStyle(self):
         self.setProperty("color", self.color)
+        if self.active:
+            self.indicator.setProperty("color", self.color)
+        self.refreshStyle()
+
+    def activeStyle(self):
+        if self.focused:
+            self.indicator.setProperty("color", self.focused_color)
+        else:
+            self.indicator.setProperty("color", self.color)
         self.refreshStyle()
 
     def keyPressEvent(self, event):
