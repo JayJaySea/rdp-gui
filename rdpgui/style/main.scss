@@ -1,0 +1,158 @@
+@import "colors";
+@import "window";
+
+QWidget {
+    font-size: 20px;
+    font-family: "RobotoMono", Arial, sans-serif;
+    color: $foreground;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+QStackedWidget {
+    background-color: $background;
+}
+
+QLineEdit {
+    background-color: $background-dark;
+    padding: 5px;
+    border-radius: 5px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: $foreground;
+    selection-background-color: $foreground;
+    selection-color: $background;
+}
+
+QLineEdit:focus {
+    border-color: $blue;
+}
+
+#LabelButton {
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    padding: 2px;
+    background-color: $background-dark;
+}
+
+#LabelButton:focus {
+    border-color: $blue;
+}  
+
+#LabelButton[color=white] {
+    border-color: $foreground;
+}
+
+#LabelButton[color=green] {
+    border-color: $green;
+}
+
+#LabelButton[color=red] {
+    border-color: $red;
+}
+
+#LabelButton[color=blue] {
+    border-color: $blue;
+}
+
+#LabelButton[color=yellow] {
+    border-color: $yellow;
+}
+
+#LabelButtonIndicator {
+    font-family: "RobotoMono", Monospace, sans-serif;
+    font-weight: normal;
+    color: $foreground;
+    border-style: solid;
+    padding: 0px;
+    background-color: $background-dark;
+}
+
+#LabelButtonIndicator[small=true] {
+    font-size: 10px;
+}
+
+#LabelButtonIndicator[medium=true] {
+    font-size: 20px;
+    border-radius: 2px;
+}
+
+#LabelButtonIndicator[large=true] {
+    font-size: 30px;
+}
+
+#LabelButtonIndicator[hover=true] {
+    background-color: $background;
+}
+
+#LabelButtonIndicator[color=green] {
+    background-color: $green;
+    color: $background;
+}
+
+#LabelButtonIndicator[color=yellow] {
+    background-color: $yellow;
+    color: $background;
+}
+
+#LabelButtonIndicator[color=red] {
+    background-color: $red;
+    color: $background;
+}
+
+#LabelButtonIndicator[color=purple] {
+    background-color: $purple;
+    color: $background;
+}
+
+#LabelButtonIndicator[color=blue] {
+    background-color: $blue;
+    color: $background;
+}
+
+#CheckableButtonIndicator {
+    font-family: "RobotoMono", Monospace, sans-serif;
+    font-weight: normal;
+    color: $foreground-dim;
+    border-style: solid;
+    padding: 5px;
+    background-color: $background-dark;
+}
+
+#CheckableButtonIndicator[small=true] {
+    font-size: 10px;
+}
+
+#CheckableButtonIndicator[medium=true] {
+    font-size: 20px;
+    border-radius: 2px;
+}
+
+#CheckableButtonIndicator[large=true] {
+    font-size: 30px;
+}
+
+#CheckableButtonIndicator[hover=true] {
+    background-color: $background;
+}
+
+#CheckableButtonIndicator[occupied=true] {
+    color: $foreground;
+}
+
+#CheckableButtonIndicator[color=green] {
+    background-color: $green;
+    color: $background;
+}
+
+#CheckableButtonIndicator[color=white] {
+    background-color: $foreground;
+    color: $background;
+}
+
+#CheckableButtonIndicator[color=blue] {
+    background-color: $blue;
+    color: $background;
+}
