@@ -26,8 +26,8 @@ QLineEdit {
 }
 
 QLineEdit:focus {
-    border-color: $green;
-    selection-background-color: $green;
+    border-color: $yellow;
+    selection-background-color: $yellow;
     selection-color: $background;
 }
 
@@ -156,5 +156,10 @@ QLineEdit:focus {
 
 #CheckableButtonIndicator[color=blue] {
     background-color: $blue;
+    color: $background;
+}
+
+#CheckableButtonIndicator[color=yellow] {
+    background-color: $yellow;
     color: $background;
 }

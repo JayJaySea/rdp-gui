@@ -98,7 +98,7 @@ class CheckableLabelButton(LabelButton):
         super().__init__(label, color, "medium", parent)
 
         self.focused = False
-        self.focused_color = "green"
+        self.focused_color = "yellow"
         self.active = active
         self.active_label = active_label
         self.inactive_label = inactive_label
